@@ -1,8 +1,20 @@
 <h1>Bem vindo!</h1>
+<!-------
+Sem helper
+<p><b>Data:</b> <%= Date.today.strftime("%d/%m/%y") %></p>
+------>
+<!---- Data com helper --->
+
+<p><b>Data:</b> <%= date_br(Date.today) %></p>
 
 <ul>
     <%# Maneira 1 %>
-    <li><%= link_to "Cadastro de Moedas", "/coins" %></li>
+    <li><%= link_to "Moedas", coins_path %></li>
     <%# Maneira 2 %>
-    <li><%= link_to "Cadastro de Moedas", coins_path %></li>
+    <li><%= link_to "Tipo de Mineração", mining_types_path %></li>
 </ul>
+
+<p>Você esta em ambiente de <b> <%= ambiente_rails %> </b> </p>
+<p>O nome: <b> <%= @meu_nome %> </b> </p>
+<p>O curso:  <b> <%= @curso %> </b> </p>
+
