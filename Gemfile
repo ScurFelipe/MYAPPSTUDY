@@ -5,6 +5,9 @@ ruby "3.0.3"
 
 gem 'tty-spinner'
 
+# Centralization of locale data collection for Ruby on Rails.
+gem 'rails-i18n', '~> 7.0.0' # For 7.0.0
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
 
@@ -44,8 +47,18 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem 'bootstrap', '~> 5.1.3'
+
+gem 'jquery-rails'
+
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
+
+# gem 'rails-asset-jquery', source: "https://rails-assents.org"
+# gem 'jquery-rails', '~> 4.4'
+
+# gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+# gem 'notifyjs_rails', '~> 0.0.2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
